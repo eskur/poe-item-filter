@@ -1,0 +1,39 @@
+#------------------------------------------------------------------------
+# Color Palette
+#------------------------------------------------------------------------
+
+# Default Colors
+# default              127 127 127
+# valuedefault         255 255 255
+# pink                 255 192 203
+# dodgerblue           30 144 255
+# fire                 150 0 0
+# cold                 54 100 146
+# lightning            255 215 0
+# chaos                208 32 144
+# augmented            136 136 255
+# crafted              184 218 242
+# unmet                210 0 0
+# uniqueitem           175 96 37
+# rareitem             255 255 119
+# magicitem            136 136 255
+# whiteitem            200 200 200
+# gemitem              27 162 155
+# currencyitem         170 158 130
+# questitem            74 230 58
+# nemesismod           255 200 0
+# nemesismodoutline    220 255 40 0
+# title                231 180 120
+# corrupted            210 0 0
+# favour               170 158 130
+# supporterpacknewitem 180 96 0
+# supporterpackitem    163 141 109
+# bloodlinemod         210 0 220
+# bloodlinemodoutline  200 74 0 160
+# tormentmod           50 230 100
+# tormentmodoutline    200 0 100 150
+# canttradeormodify    210 0 0
+
+# A few additional colors
+# bright currency      242 213 145
+# chaos bg             51 8 35
