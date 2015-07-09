@@ -1,51 +1,53 @@
-# Default Colors
-# default              127 127 127
-# valuedefault         255 255 255
-# pink                 255 192 203
-# dodgerblue           30 144 255
-# fire                 150 0 0
-# cold                 54 100 146
-# lightning            255 215 0
-# chaos                208 32 144
-# augmented            136 136 255
-# crafted              184 218 242
-# unmet                210 0 0
-# uniqueitem           175 96 37
-# rareitem             255 255 119
-# magicitem            136 136 255
-# whiteitem            200 200 200
-# gemitem              27 162 155
-# currencyitem         170 158 130
-# questitem            74 230 58
-# nemesismod           255 200 0
-# nemesismodoutline    220 255 40 0
-# title                231 180 120
-# corrupted            210 0 0
-# favour               170 158 130
-# supporterpacknewitem 180 96 0
-# supporterpackitem    163 141 109
-# bloodlinemod         210 0 220
-# bloodlinemodoutline  200 74 0 160
-# tormentmod           50 230 100
-# tormentmodoutline    200 0 100 150
-# canttradeormodify    210 0 0
+#------------------------------------------------------------------------
+# Eskur's Item Filter
+#------------------------------------------------------------------------
 
-# A few additional colors
-# bright currency      242 213 145
-# chaos bg             51 8 35
+# -- Colorscheme --
+# Ultra rare items
+# Red Border / Red Background / Black Text
+
+# General "Pick this up"
+# Green Border / Dark Green BG / Normal Text
+
+# Items used in recipes
+# Green Border / Dark Green BG / Normal Text
+
+# Items useful during leveling
+# Teal Border / Dark Teal BG / Normal Text
+
+# Common Currency
+# Normal Border / Normal BG / Bright Gold Text
+
+# Uncommon Currency
+# Bright Gold Border / Normal BG / Bright Gold Text
+
+# Rare Currency
+# Normal Border / Bright Gold BG / Black Text
+
+# Rares itemlevel 60-74 (Chaos Recipe)
+# Gold Border / Normal BG / Normal Text
+
+# Rares itemlevel 75-82 (Regal Recipe)
+# Blue Border / Normal BG / Normal Text
+
+# White & Magic items with good bases itemlevel 75-82
+# Blue Border / Normal BG / Normal Text
+
+# White/Magic/Rare items with good bases itemlevel 83+
+# Pink Border / Dark Pink BG / Normal Text
 
 #------------------------------------------------------------------------
 # Hideout / MTX / Quest
 #------------------------------------------------------------------------
 
 Show
-    Class Hideout Doodads
+    Class "Hideout Doodads"
 
 Show
-    Class Microtransactions
+    Class "Microtransactions"
 
 Show
-    Class Quest Items
+    Class "Quest Items"
 
 #------------------------------------------------------------------------
 # ULTRA Rare Stuff
@@ -53,34 +55,79 @@ Show
 
 Show
     Class "Fishing Rod"
-    SetFontSize 50
-    SetTextColor 0 0 0
-    SetBorderColor 71 71 71
-    SetBackgroundColor 249 38 114
     PlayAlertSound 1
+    SetFontSize 50
+    # Color: Max Red
+    SetBorderColor 255 0 60
+    # Color: Max Red
+    SetBackgroundColor 255 0 60
+    # Color: Black
+    SetTextColor 0 0 0
 
 # Exception for tabula
 Show
     LinkedSockets 6
     BaseType "Simple Robe"
-    Rarity Unique
+    Rarity "Unique"
 
 # If someone knows how to filter corrupted 6 links message me
 Show
     LinkedSockets 6
-    SetFontSize 50
-    SetTextColor 0 0 0
-    SetBorderColor 71 71 71
-    SetBackgroundColor 249 38 114
     PlayAlertSound 1
+    SetFontSize 50
+    # Color: Max Red
+    SetBorderColor 255 0 60
+    # Color: Max Red
+    SetBackgroundColor 255 0 60
+    # Color: Black
+    SetTextColor 0 0 0
 
 Show
     BaseType "Mirror of Kalandra"
-    SetFontSize 50
-    SetTextColor 0 0 0
-    SetBorderColor 71 71 71
-    SetBackgroundColor 249 38 114
     PlayAlertSound 1
+    SetFontSize 50
+    # Color: Max Red
+    SetBorderColor 255 0 60
+    # Color: Max Red
+    SetBackgroundColor 255 0 60
+    # Color: Black
+    SetTextColor 0 0 0
+
+#------------------------------------------------------------------------
+# Currency
+#------------------------------------------------------------------------
+
+# Rare
+Show
+    BaseType "Eternal Orb" "Divine Orb" "Exalted Orb" "Albino Rhoa Feather"
+    SetFontSize 50
+    SetBorderColor 0 0 0
+    SetBackgroundColor 242 213 145
+    SetTextColor 0 0 0
+    PlayAlertSound 2
+
+# Uncommon
+Show
+    BaseType "Regal Orb" "Orb of Regret" "Vaal Orb" "Chaos Orb" "Blessed Orb" "Gemcutter's Prism" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Glassblower's Bauble" "Vaal Orb" "Cartographer's Chisel"
+    SetBackgroundColor 0 0 0
+    SetBorderColor 242 213 145
+    SetTextColor 242 213 145
+
+# Common
+Show
+    Class "Currency"
+    SetBorderColor 0 0 0 0
+    SetTextColor 242 213 145
+
+#------------------------------------------------------------------------
+# Divination cards
+#------------------------------------------------------------------------
+
+Show
+    Class "Divination Card"
+    SetBackgroundColor 0 0 0
+    SetBorderColor 242 213 145
+    SetTextColor 242 213 145
 
 #------------------------------------------------------------------------
 # Sockets / Links / Colors
@@ -88,203 +135,228 @@ Show
 
 Show
     LinkedSockets 5
-    SetBackgroundColor 51 8 35
-    SetBorderColor 208 32 144
+    # Color: Green
+    SetBorderColor 74 230 58
+    # Color: Green 20% B
+    SetBackgroundColor 17 51 13
 
 Show
     Sockets 6
-    SetBackgroundColor 51 8 35
-    SetBorderColor 208 32 144
+    # Color: Green
+    SetBorderColor 74 230 58
+    # Color: Green 20% B
+    SetBackgroundColor 17 51 13
 
-# Chromatic recipe
+# Chromatic Recipe
 Show
     SocketGroup RGB
-    SetBackgroundColor 51 8 35
-    SetBorderColor 208 32 144
+    # Color: Green
+    SetBorderColor 74 230 58
+    # Color: Green 20% B
+    SetBackgroundColor 17 51 13
+
+# Chisel Recipe
+Show
+    Rarity "Normal"
+    BaseType "Gavel" "Rock Breaker" "Stone Hammer"
+    # Color: Green
+    SetBorderColor 74 230 58
+    # Color: Green 20% B
+    SetBackgroundColor 17 51 13
 
 # IPD / Spell Damage Recipes
 Show
     BaseType "Rustic Sash" "Chain Belt"
-    SetBackgroundColor 51 8 35
-    SetBorderColor 208 32 144
+    # Color: Green
+    SetBorderColor 74 230 58
+    # Color: Green 20% B
+    SetBackgroundColor 17 51 13
 
 #------------------------------------------------------------------------
-# UNIQUE AND MAPS - always highlight!
+# Uniques / Maps
 #------------------------------------------------------------------------
 
 Show
-    Rarity Unique
+    Rarity "Unique"
 
 Show
-    Class Maps
+    Class "Maps"
 
 Show
-    Class Maps "Map Fragments"
-
-#------------------------------------------------------------------------
-# Currency
-#------------------------------------------------------------------------
-
-# Rare orbs
-Show
-    BaseType "Eternal Orb" "Divine Orb" "Exalted Orb" "Albino Rhoa Feather"
-    SetFontSize 50
-    SetTextColor 0 0 0
-    SetBorderColor 0 0 0
-    SetBackgroundColor 242 213 145
-    PlayAlertSound 2
-
-# Uncommon orbs
-Show
-    BaseType "Regal Orb" "Orb of Regret" "Vaal Orb" "Chaos Orb" "Blessed Orb" "Gemcutter's Prism" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Glassblower's Bauble" "Vaal Orb" "Cartographer's Chisel"
-    SetBackgroundColor 0 0 0
-    SetTextColor 242 213 145
-    SetBorderColor 242 213 145
-
-# The rest
-Show
-    Class Currency
-    SetTextColor 242 213 145
-    SetBorderColor 0 0 0 0
-
-Show
-    Class Currency
-
-Show
-    Class Stackable Currency
-
-Show
-    Class "Divination Card"
-    SetBackgroundColor 0 0 0
-    SetTextColor 242 213 145
-    SetBorderColor 242 213 145
+    Class "Maps" "Map Fragments"
 
 #------------------------------------------------------------------------
 # Jewels
 #------------------------------------------------------------------------
 
 Show
-    Class Jewel
-    SetBackgroundColor 51 8 35
-    SetBorderColor 208 32 144
+    Class "Jewel"
+    # Color: Green
+    SetBorderColor 74 230 58
+    # Color: Green 20% B
+    SetBackgroundColor 17 51 13
 
 #------------------------------------------------------------------------
 # Gems
 #------------------------------------------------------------------------
 
 Show
-    Class Gem
-    SetTextColor 27 162 155
-    SetBorderColor 0 0 0
-    SetBackgroundColor 0 0 0
+    Class "Gem"
+    Quality > 0
+    # Color: Gem
+    SetBorderColor 27 162 155
 
-#------------------------------------------------------------------------
-# By Itemlevel
-#------------------------------------------------------------------------
-
-# iLvl 75+ rares | blue border
 Show
-    ItemLevel >= 75
-    Class "Amulet" "Belt" "Body Armours" "Boot" "Bow" "Claw" "Dagger" "Glove" "Helmet" "One Hand" "Quiver" "Ring" "Sceptre" "Shield" "Stave" "Two Hand" "Wand"
-    Rarity Rare
-    SetBorderColor 30 144 255
-
-# iLvl 60+ rares | yellow border
-Show
-    ItemLevel >= 60
-    Class "Amulet" "Belt" "Body Armours" "Boot" "Bow" "Claw" "Dagger" "Glove" "Helmet" "One Hand" "Quiver" "Ring" "Sceptre" "Shield" "Stave" "Two Hand" "Wand"
-    Rarity Rare
-    SetBorderColor 255 255 119
+    Class "Gem"
 
 #------------------------------------------------------------------------
 # Jewelry Bases
 #------------------------------------------------------------------------
 
-# Good Amulet Bases
-Show
-    Rarity Normal
-    ItemLevel >= 60
-    BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Gold Amulet"
-    # SetBackgroundColor 60 60 60 127
-    # SetTextColor 255 255 255 127
-
-# Good Ring Bases
-Show
-    Rarity Normal
-    ItemLevel >= 60
-    BaseType "Diamond Ring" "Iron Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Two-Stone Ring" "Unset Ring"
-    # SetBackgroundColor 60 60 60 127
-    # SetTextColor 255 255 255 127
-
-# ilvl 75+
+# Amulets
 Show
     ItemLevel >= 75
     BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet"
+    # Color: Blue
     SetBorderColor 30 144 255
 
+Show
+    Rarity "Normal"
+    ItemLevel <= 74
+    ItemLevel >= 60
+    BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Gold Amulet"
+
+# Rings
 Show
     ItemLevel >= 75
     BaseType "Diamond Ring" "Iron Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Two-Stone Ring" "Unset Ring"
+    # Color: Blue
     SetBorderColor 30 144 255
 
+Show
+    Rarity "Normal"
+    ItemLevel <= 74
+    ItemLevel >= 60
+    BaseType "Diamond Ring" "Iron Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Two-Stone Ring" "Unset Ring"
+
+# Belts
 Show
     ItemLevel >= 75
     BaseType "Chain Belt" "Rustic Sash" "Leather Belt"
+    # Color: Blue
     SetBorderColor 30 144 255
 
 #------------------------------------------------------------------------
-# Weapon Bases
+# Weapon Crafting Bases
 #------------------------------------------------------------------------
 
-# ItemLevel 77+ 
+# --- Physical/Elemental Attack ---
+# Itemlevel 83+ for T1 Physical % / T1 Hybrid Physical % & Accuracy
 Show
+    ItemLevel >= 83
+    BaseType "Harbinger Bow" "Terror Claw" "Gemini Claw" "Jewelled Foil" "Vaal Rapier" "Behemoth Mace" "Vaal Axe" "Piledriver" "Coronal Maul" "Exquisite Blade" "Lathi"
+    # Color: Pink
+    SetBorderColor 255 47 100
+    # Color: Pink 20% Br
+    SetBackgroundColor 51 9 20
+
+# Itemlevel 77+ for T1 Added Physical
+Show
+    ItemLevel <= 82
+    ItemLevel >= 77
+    BaseType "Harbinger Bow" "Terror Claw" "Gemini Claw" "Jewelled Foil" "Vaal Rapier" "Behemoth Mace" "Vaal Axe" "Piledriver" "Coronal Maul" "Exquisite Blade" "Lathi"
+    # Color: Blue
+    SetBorderColor 30 144 255
+
+# Itemlevel 65+ for T2 Added Elemental
+Show
+    ItemLevel <= 76
+    ItemLevel >= 65
+    BaseType "Harbinger Bow" "Terror Claw" "Gemini Claw" "Jewelled Foil" "Vaal Rapier" "Behemoth Mace" "Vaal Axe" "Piledriver" "Coronal Maul" "Exquisite Blade" "Lathi"
+
+# --- Caster ---
+# Itemlevel 84+ for T1 Spell Damage
+Show
+    ItemLevel >= 84
+    BaseType "Profane Wand" "Judgement Staff"
+    # Color: Pink
+    SetBorderColor 255 47 100
+    # Color: Pink 20% Br
+    SetBackgroundColor 51 9 20
+
+# Itemlevel 76+ for T1 Spell Crit
+Show
+    ItemLevel <= 83
     ItemLevel >= 78
-    BaseType "Harbinger Bow" "Terror Claw" "Gemini Claw" "Ambusher" "Platinum Kris" "Jewelled Foil" "Vaal Rapier" "Behemoth Mace" "Lathi" "Eclipse Staff" "Vaal Axe" "Piledriver" "Coronal Maul" "Exquisite Blade" "Imbued Wand" "Profane Wand"
+    BaseType "Profane Wand" "Judgement Staff"
+    # Color: Blue
     SetBorderColor 30 144 255
 
-# Itemlevel 60+ bases
-# Useful for new leagues, show semi-transparent
+# Itemlevel 64+ for T2 Spell Damage
 Show
-    ItemLevel >= 60
-    BaseType "Harbinger Bow" "Terror Claw" "Gemini Claw" "Ambusher" "Platinum Kris" "Jewelled Foil" "Vaal Rapier" "Behemoth Mace" "Lathi" "Eclipse Staff" "Vaal Axe" "Piledriver" "Coronal Maul" "Exquisite Blade" "Imbued Wand" "Profane Wand"
-    SetBackgroundColor 60 60 60 127
-    SetTextColor 255 255 255 127
+    ItemLevel <= 77
+    ItemLevel >= 64
+    BaseType "Profane Wand" "Judgement Staff"
+
+# --- Hybrid ---
+# Itemlevel 84+ for T1 Spell Damage
+Show
+    ItemLevel >= 84
+    BaseType "Platinum Kris" "Ambusher" "Imbued Wand"
+    # Color: Pink
+    SetBorderColor 255 47 100
+    # Color: Pink 20% Br
+    SetBackgroundColor 51 9 20
+
+# Itemlevel 77+ for T1 Added Physical
+Show
+    ItemLevel <= 83
+    ItemLevel >= 77
+    BaseType "Platinum Kris" "Ambusher" "Imbued Wand"
+    # Color: Blue
+    SetBorderColor 30 144 255
+
+# Itemlevel 65+
+# 65+ for T2 Added Physical
+Show
+    ItemLevel <= 76
+    ItemLevel >= 65
+    BaseType "Platinum Kris" "Ambusher" "Imbued Wand"
+    # Color: Blue
+    SetBorderColor 30 144 255
 
 #------------------------------------------------------------------------
-# Armor Bases
+# Armor Crafting Bases
 #------------------------------------------------------------------------
 
-# 78 to roll "X & Stun Recovery"
+# 84 to roll T1 "Armour/Evasion/ES%"
 Show
+    ItemLevel >= 84
+    BaseType "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Triumphant Lamellar" "Carnal Armour" "Sadist Garb" "Saintly Chainmail" "Saint's Hauberk" "Sacrificial Garb"
+    # Color: Pink
+    SetBorderColor 255 47 100
+    # Color: Pink 20% Br
+    SetBackgroundColor 51 9 20
+
+# 78 to roll T1 "Evasion/Armour/ES% & Stun Recovery"
+Show
+    ItemLevel <= 83
     ItemLevel >= 78
     BaseType "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Triumphant Lamellar" "Carnal Armour" "Sadist Garb" "Saintly Chainmail" "Saint's Hauberk" "Sacrificial Garb"
+    # Color: Blue
     SetBorderColor 30 144 255
-
-# Show
-#     ItemLevel >= 60
-#     BaseType "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Triumphant Lamellar" "Carnal Armour" "Sadist Garb" "Saintly Chainmail" "Saint's Hauberk" "Sacrificial Garb"
-#     SetBorderColor 255 255 119
-
 
 #------------------------------------------------------------------------
 # Chance
 #------------------------------------------------------------------------
 
-# Show
-#     Rarity Normal
-#     BaseType "Prophecy Wand" "Judgement Staff" "Gavel"
-#     SetBackgroundColor 51 8 35
-#     SetBorderColor 208 32 144
-
-#------------------------------------------------------------------------
-# Chisel
-#------------------------------------------------------------------------
-
 Show
-    Rarity Normal
-    BaseType "Gavel" "Rock Breaker" "Stone Hammer"
-    SetBackgroundColor 51 8 35
-    SetBorderColor 208 32 144
+    Rarity "Normal"
+    BaseType "Prophecy Wand" "Judgement Staff" "Gavel"
+    # Color: Unique
+    SetBorderColor 175 96 37
+    # Color: Unique 20% Bright
+    SetBackgroundColor 51 28 11
 
 #------------------------------------------------------------------------
 # Flasks
@@ -292,93 +364,94 @@ Show
 
 Show
     Class "Utility Flasks"
-    SetBackgroundColor 51 8 35
-    SetBorderColor 208 32 144
+    # Color: Green
+    SetBorderColor 74 230 58
+    # Color: Green 20% B
+    SetBackgroundColor 17 51 13
 
 Show
     BaseType "Flask"
     Quality >= 5
-    SetBackgroundColor 51 8 35
-    SetBorderColor 208 32 144
+    # Color: Green
+    SetBorderColor 74 230 58
+    # Color: Green 20% B
+    SetBackgroundColor 17 51 13
 
-Hide
-    ItemLevel >= 60
-    Class "Mana Flasks" "Hybrid Flasks"
-
+# Hide outdated flasks
 # Medium
 Hide
-    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     Rarity "Normal" "Magic"
+    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     ItemLevel >= 6
     DropLevel <= 3
 
 # Large
 Hide
-    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     Rarity "Normal" "Magic"
+    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     ItemLevel >= 12
     DropLevel <= 6
 
 # Greater
 Hide
-    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     Rarity "Normal" "Magic"
+    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     ItemLevel >= 18
     DropLevel <= 12
 
 # Grand
 Hide
-    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     Rarity "Normal" "Magic"
+    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     ItemLevel >= 24
     DropLevel <= 18
 
 # Giant
 Hide
-    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     Rarity "Normal" "Magic"
+    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     ItemLevel >= 30
     DropLevel <= 24
 
 # Colossal
 Hide
-    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     Rarity "Normal" "Magic"
+    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     ItemLevel >= 36
     DropLevel <= 30
 
 # Sacred
 Hide
-    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     Rarity "Normal" "Magic"
+    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     ItemLevel >= 42
     DropLevel <= 36
 
 # Hallowed
 Hide
-    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     Rarity "Normal" "Magic"
+    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     ItemLevel >= 50
     DropLevel <= 42
 
 # Sanctified
 Hide
-    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     Rarity "Normal" "Magic"
+    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     ItemLevel >= 60
     DropLevel <= 50
 
 # Divine
 Hide
-    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     Rarity "Normal" "Magic"
+    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     ItemLevel >= 65
     DropLevel <= 60
 
 # Eternal
 Hide
-    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     Rarity "Normal" "Magic"
+    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     ItemLevel >= 68
     DropLevel <= 65
 
@@ -389,22 +462,65 @@ Show
 # Leveling
 #------------------------------------------------------------------------
 
-# 4 links while leveling
+# 4 links
 Show
     ItemLevel < 60
     LinkedSockets 4
-    SetBackgroundColor 11 51 22
-    SetBorderColor 50 230 100 127
+    # Color: Teal
+    SetBorderColor 38 223 216
+    # Color: Teal 20% Br
+    SetBackgroundColor 9 51 50
 
-# 3 link sceptres for the +1 gem recipe
+# 3 Link Sceptres for the +1 Gem recipe
 Show
     ItemLevel < 40
     LinkedSockets 3
     BaseType "Sceptre"
-    SetBackgroundColor 11 51 22
-    SetBorderColor 50 230 100 127
+    # Color: Teal
+    SetBorderColor 38 223 216
+    # Color: Teal 20% Br
+    SetBackgroundColor 9 51 50
 
-# Until Cruel we want to see everything!
+# 3 Link Armours
+Show
+    ItemLevel < 30
+    Class "Body Armours" "Boot" "Glove" "Helmet"
+    LinkedSockets 3
+    # Color: Teal
+    SetBorderColor 38 223 216
+    # Color: Teal 20% Br
+    SetBackgroundColor 9 51 50
+
+# Resist Rings
+# Iron Ring for use with gem recipe (Gem + Iron Ring = Resist ring)
+Show
+    ItemLevel < 40
+    BaseType "Iron Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Two-Stone Ring"
+    # Color: Teal
+    SetBorderColor 38 223 216
+    # Color: Teal 20% Br
+    SetBackgroundColor 9 51 50
+
+# Stat amulets
+Show
+    ItemLevel < 40
+    BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet"
+    # Color: Teal
+    SetBorderColor 38 223 216
+    # Color: Teal 20% Br
+    SetBackgroundColor 9 51 50
+
+# Heavy belts
+Show
+    ItemLevel < 40
+    Rarity "Normal" "Magic"
+    BaseType "Heavy Belt"
+    # Color: Teal
+    SetBorderColor 38 223 216
+    # Color: Teal 20% Br
+    SetBackgroundColor 9 51 50
+
+# Show all items until cruel.
 Show
     ItemLevel < 40
 
@@ -412,13 +528,32 @@ Show
 # Remaining Items
 #------------------------------------------------------------------------
 
+# ilvl 75-82 rares (Regal Recipe)
+Show
+    ItemLevel <= 82
+    ItemLevel >= 75
+    # Class "Amulet" "Belt" "Body Armours" "Boot" "Bow" "Claw" "Dagger" "Glove" "Helmet" "One Hand" "Quiver" "Ring" "Sceptre" "Shield" "Stave" "Two Hand" "Wand"
+    Rarity "Rare"
+    # Color: Blue
+    SetBorderColor 30 144 255
+
+# ilvl 60-74 rares (Chaos Recipe)
+Show
+    ItemLevel <= 74
+    ItemLevel >= 60
+    # Class "Amulet" "Belt" "Body Armours" "Boot" "Bow" "Claw" "Dagger" "Glove" "Helmet" "One Hand" "Quiver" "Ring" "Sceptre" "Shield" "Stave" "Two Hand" "Wand"
+    Rarity "Rare"
+    # Color: Yellow
+    SetBorderColor 255 255 119
+
 # Show all rares
 Show
-    Rarity Rare
+    Rarity "Rare"
 
 #------------------------------------------------------------------------
 # Hide everything else / DEBUG
 #------------------------------------------------------------------------
+
 Hide
 
 # Debug Mode
