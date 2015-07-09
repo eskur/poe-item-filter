@@ -352,7 +352,7 @@ Show
 
 Show
     Rarity "Normal"
-    BaseType "Prophecy Wand" "Judgement Staff" "Gavel"
+    BaseType "Prophecy Wand" "Judgement Staff" "Gavel" "Occultist's Vestment"
     # Color: Unique
     SetBorderColor 175 96 37
     # Color: Unique 20% Bright
