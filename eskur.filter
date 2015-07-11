@@ -128,7 +128,8 @@ Show
 Show
     Quality > 0
     Class "Gem"
-    SetTextColor 0 0 0 0
+    SetTextColor 27 162 155 # Gem Teal
+    SetBackgroundColor 0 0 0 # Black
     SetBorderColor 27 162 155 # Gem Teal
 
 Show
