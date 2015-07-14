@@ -142,27 +142,27 @@ Show
 # Amulets
 Show
     ItemLevel >= 75
-    Rarity <= Magic
+    Rarity = Normal Magic
     BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Gold Amulet"
     SetBorderColor 30 144 255
 
 Show
     ItemLevel <= 74
     ItemLevel >= 60
-    Rarity = Normal
+    Rarity = Normal Magic
     BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Gold Amulet"
 
 # Rings
 Show
     ItemLevel >= 75
-    Rarity <= Magic
+    Rarity = Normal Magic
     BaseType "Diamond Ring" "Iron Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Two-Stone Ring" "Unset Ring"
     SetBorderColor 30 144 255
 
 Show
     ItemLevel <= 74
     ItemLevel >= 60
-    Rarity <= Normal
+    Rarity = Normal Magic
     BaseType "Diamond Ring" "Iron Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Two-Stone Ring" "Unset Ring"
 
 # Belts
@@ -275,89 +275,84 @@ Show
 Hide
     ItemLevel >= 6
     DropLevel <= 3
-    Rarity = Normal
-    Rarity = Normal
+    Rarity = Normal Magic
     Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
 
 # Large
 Hide
     ItemLevel >= 12
     DropLevel <= 6
-    Rarity = Normal
-    Rarity = Normal
+    Rarity = Normal Magic
     Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
 
 # Greater
 Hide
     ItemLevel >= 18
     DropLevel <= 12
-    Rarity = Normal
-    Rarity = Normal
+    Rarity = Normal Magic
     Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
 
 # Grand
 Hide
     ItemLevel >= 24
     DropLevel <= 18
-    Rarity = Normal
-    Rarity = Normal
+    Rarity = Normal Magic
     Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
 
 # Giant
 Hide
     ItemLevel >= 30
     DropLevel <= 24
-    Rarity = Normal
-    Rarity = Normal
+    Rarity = Normal Magic
     Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
 
 # Colossal
 Hide
     ItemLevel >= 36
     DropLevel <= 30
-    Rarity = Normal
-    Rarity = Normal
+    Rarity = Normal Magic
     Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
 
 # Sacred
 Hide
     ItemLevel >= 42
     DropLevel <= 36
-    Rarity = Normal
-    Rarity = Normal
+    Rarity = Normal Magic
     Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
 
 # Hallowed
 Hide
     ItemLevel >= 50
     DropLevel <= 42
-    Rarity = Normal
-    Rarity = Normal
-    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
+    Rarity = Normal Magic
+    Class "Mana Flasks" "Hybrid Flasks"
 
 # Sanctified
 Hide
     ItemLevel >= 60
     DropLevel <= 50
-    Rarity = Normal
-    Rarity = Normal
-    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
+    Rarity = Normal Magic
+    Class "Mana Flasks" "Hybrid Flasks"
 
 # Divine
 Hide
     ItemLevel >= 65
     DropLevel <= 60
-    Rarity = Normal
-    Rarity = Normal
-    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
+    Rarity = Normal Magic
+    Class "Mana Flasks" "Hybrid Flasks"
 
 # Eternal
 Hide
     ItemLevel >= 68
-    DropLevel <= 65
-    Rarity = Normal
-    Rarity = Normal
-    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
+    Rarity = Normal Magic
+    Class "Mana Flasks" "Hybrid Flasks"
+
+# In maps show Hallowed/Divine/Eternal life flasks, but not sanctified.
+Hide
+    ItemLevel >= 68
+    Rarity = Normal Magic
+    Class "Life Flasks"
+    BaseType "Sanctified Life Flask"
 
 Show
     BaseType "Flask"
