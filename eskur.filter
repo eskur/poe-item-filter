@@ -156,14 +156,14 @@ Show
 Show
     ItemLevel >= 75
     Rarity = Normal Magic
-    BaseType "Diamond Ring" "Iron Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Two-Stone Ring" "Unset Ring"
+    BaseType "Diamond Ring" "Iron Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Two-Stone Ring" "Unset Ring" "Gold Ring"
     SetBorderColor 30 144 255
 
 Show
     ItemLevel <= 74
     ItemLevel >= 60
     Rarity = Normal Magic
-    BaseType "Diamond Ring" "Iron Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Two-Stone Ring" "Unset Ring"
+    BaseType "Diamond Ring" "Iron Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Two-Stone Ring" "Unset Ring" "Gold Ring"
 
 # Belts
 Show
