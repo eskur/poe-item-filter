@@ -59,7 +59,7 @@ Show
     SetTextColor 242 213 145 # Bright Gold
     SetBackgroundColor 0 0 0 # Black
     SetBorderColor 242 213 145 # Bright Gold
-    SetFontSize 38
+    SetFontSize 37
 
 # Common
 Show
@@ -67,7 +67,7 @@ Show
     SetTextColor 242 213 145 # Bright Gold
     SetBackgroundColor 0 0 0 # Black
     SetBorderColor 0 0 0 0 # Transparent
-    SetFontSize 38
+    SetFontSize 37
 
 # Section: Divination Cards
 
@@ -76,7 +76,7 @@ Show
     SetTextColor 242 213 145 # Bright Gold
     SetBackgroundColor 0 0 0 # Black
     SetBorderColor 0 0 0 # Black
-    SetFontSize 38
+    SetFontSize 37
 
 # Section: Recipes
 
@@ -177,19 +177,27 @@ Show
 Show
     ItemLevel >= 83
     BaseType "Harbinger Bow" "Terror Claw" "Gemini Claw" "Jewelled Foil" "Vaal Rapier" "Behemoth Mace" "Vaal Axe" "Piledriver" "Coronal Maul" "Exquisite Blade" "Lathi" "Tiger Hook"
-    SetBackgroundColor 51 9 20
-    SetBorderColor 255 47 100
+    SetBackgroundColor 51 9 20 # Dark Red
+    SetBorderColor 255 47 100 # Bright Red
 
 # Itemlevel 77+ for T1 Added Physical
 Show
     ItemLevel <= 82
     ItemLevel >= 77
     BaseType "Harbinger Bow" "Terror Claw" "Gemini Claw" "Jewelled Foil" "Vaal Rapier" "Behemoth Mace" "Vaal Axe" "Piledriver" "Coronal Maul" "Exquisite Blade" "Lathi" "Tiger Hook"
-    SetBorderColor 30 144 255
+    SetBackgroundColor 6 29 51 # Dark Blue
+    SetBorderColor 30 144 255 # Bright Blue
+
+# Itemlevel 75+ for Regal
+Show
+    ItemLevel <= 76
+    ItemLevel >= 75
+    BaseType "Harbinger Bow" "Terror Claw" "Gemini Claw" "Jewelled Foil" "Vaal Rapier" "Behemoth Mace" "Vaal Axe" "Piledriver" "Coronal Maul" "Exquisite Blade" "Lathi" "Tiger Hook"
+    SetBorderColor 30 144 255 # Bright Blue
 
 # Itemlevel 65+ for T2 Added Elemental
 Show
-    ItemLevel <= 76
+    ItemLevel <= 74
     ItemLevel >= 65
     BaseType "Harbinger Bow" "Terror Claw" "Gemini Claw" "Jewelled Foil" "Vaal Rapier" "Behemoth Mace" "Vaal Axe" "Piledriver" "Coronal Maul" "Exquisite Blade" "Lathi" "Tiger Hook"
 
@@ -197,42 +205,56 @@ Show
 Show
     ItemLevel >= 84
     BaseType "Profane Wand" "Judgement Staff"
-    SetBackgroundColor 51 9 20
-    SetBorderColor 255 47 100
+    SetBackgroundColor 51 9 20 # Dark Red
+    SetBorderColor 255 47 100 # Bright Red
 
 # Itemlevel 76+ for T1 Spell Crit
 Show
     ItemLevel <= 83
     ItemLevel >= 78
-    BaseType "Profane Wand" "Judgement Staff"
-    SetBorderColor 30 144 255
+    BaseType "Profane Wand"
+    SetBackgroundColor 6 29 51 # Dark Blue
+    SetBorderColor 30 144 255 # Bright Blue
+
+# Itemlevel 76+ for T1 Spell Crit
+Show
+    ItemLevel <= 77
+    ItemLevel >= 75
+    BaseType "Profane Wand"
+    SetBorderColor 30 144 255 # Bright Blue
 
 # Itemlevel 64+ for T2 Spell Damage
 Show
-    ItemLevel <= 77
+    ItemLevel <= 74
     ItemLevel >= 64
-    BaseType "Profane Wand" "Judgement Staff"
+    BaseType "Profane Wand"
 
 # Itemlevel 84+ for T1 Spell Damage
 Show
     ItemLevel >= 84
     BaseType "Platinum Kris" "Ambusher" "Imbued Wand"
-    SetBackgroundColor 51 9 20
-    SetBorderColor 255 47 100
+    SetBackgroundColor 51 9 20 # Dark Red
+    SetBorderColor 255 47 100 # Bright Red
 
 # Itemlevel 77+ for T1 Added Physical
 Show
     ItemLevel <= 83
     ItemLevel >= 77
     BaseType "Platinum Kris" "Ambusher" "Imbued Wand"
-    SetBorderColor 30 144 255
+    SetBackgroundColor 6 29 51 # Dark Blue
+    SetBorderColor 30 144 255 # Bright Blue
+
+Show
+    ItemLevel <= 76
+    ItemLevel >= 75
+    BaseType "Platinum Kris" "Ambusher" "Imbued Wand"
+    SetBorderColor 30 144 255 # Bright Blue
 
 # 65+ for T2 Added Physical
 Show
     ItemLevel <= 76
     ItemLevel >= 65
     BaseType "Platinum Kris" "Ambusher" "Imbued Wand"
-    SetBorderColor 30 144 255
 
 # Section: Armour Crafting Bases
 
@@ -240,23 +262,24 @@ Show
 Show
     ItemLevel >= 84
     BaseType "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Triumphant Lamellar" "Carnal Armour" "Sadist Garb" "Saintly Chainmail" "Saint's Hauberk" "Sacrificial Garb"
-    SetBackgroundColor 51 9 20
-    SetBorderColor 255 47 100
+    SetBackgroundColor 51 9 20 # Dark Red
+    SetBorderColor 255 47 100 # Bright Red
 
 # 78 to roll T1 "Evasion/Armour/ES% & Stun Recovery"
 Show
     ItemLevel <= 83
     ItemLevel >= 78
     BaseType "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Triumphant Lamellar" "Carnal Armour" "Sadist Garb" "Saintly Chainmail" "Saint's Hauberk" "Sacrificial Garb"
-    SetBorderColor 30 144 255
+    SetBackgroundColor 6 29 51 # Dark Blue
+    SetBorderColor 30 144 255 # Bright Blue
 
 # Section: Chance
 
 Show
     Rarity = Normal
     BaseType "Prophecy Wand" "Judgement Staff" "Gavel" "Occultist's Vestment"
-    SetBackgroundColor 51 28 11
-    SetBorderColor 175 96 37
+    SetBackgroundColor 51 28 11 # Dark Brown
+    SetBorderColor 175 96 37 # Bright Brown
 
 # Section: Flask
 
@@ -427,5 +450,6 @@ Show
 Show
     Rarity = Rare
 
-Hide
+# Section: Everything Else
 
+Hide
