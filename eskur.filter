@@ -66,7 +66,6 @@ Show
     Class "Currency"
     SetTextColor 242 213 145 # Bright Gold
     SetBackgroundColor 0 0 0 # Black
-    SetBorderColor 0 0 0 0 # Transparent
     SetFontSize 37
 
 # Section: Divination Cards
@@ -75,7 +74,14 @@ Show
     Class "Divination Card"
     SetTextColor 242 213 145 # Bright Gold
     SetBackgroundColor 0 0 0 # Black
-    SetBorderColor 0 0 0 # Black
+    SetFontSize 37
+
+# Section: Maps
+
+Show
+    Class "Maps" "Map Fragments"
+    SetBackgroundColor 51 23 50 # Dark Pink
+    SetBorderColor 242 111 236 # Bright Pink
     SetFontSize 37
 
 # Section: Recipes
@@ -107,16 +113,14 @@ Show
 
 # IPD / Spell Damage Recipes
 Show
+    ItemLevel <= 60
     BaseType "Rustic Sash" "Chain Belt"
     SetBackgroundColor 17 51 13 # Dark Green
     SetBorderColor 74 230 58 # Bright Green
 
-# Section: Maps
-
 Show
-    Class "Maps" "Map Fragments"
-    SetBackgroundColor 51 18 0 # Dark Orange
-    SetBorderColor 255 90 0 # Bridge Orange
+    ItemLevel >= 60
+    BaseType "Rustic Sash" "Chain Belt"
 
 # Section: Jewels
 
@@ -136,142 +140,38 @@ Show
 
 Show
     Class "Gem"
+    SetTextColor 27 162 155 # Gem Teal
+    SetBackgroundColor 0 0 0 # Black
 
 # Section: Jewelry Alching Bases
 
-# Amulets
-Show
-    ItemLevel >= 75
-    Rarity = Normal Magic
-    BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Gold Amulet"
-    SetBorderColor 30 144 255
-
-Show
-    ItemLevel <= 74
-    ItemLevel >= 60
-    Rarity = Normal Magic
-    BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Gold Amulet"
-
-# Rings
-Show
-    ItemLevel >= 75
-    Rarity = Normal Magic
-    BaseType "Diamond Ring" "Iron Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Two-Stone Ring" "Unset Ring" "Gold Ring"
-    SetBorderColor 30 144 255
-
-Show
-    ItemLevel <= 74
-    ItemLevel >= 60
-    Rarity = Normal Magic
-    BaseType "Diamond Ring" "Iron Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Two-Stone Ring" "Unset Ring" "Gold Ring"
-
-# Belts
-Show
-    ItemLevel >= 75
-    BaseType "Chain Belt" "Rustic Sash" "Leather Belt"
-    SetBorderColor 30 144 255
-
 # Section: Weapon Crafting Bases
-
-# Itemlevel 83+ for T1 Physical % / T1 Hybrid Physical % & Accuracy
-Show
-    ItemLevel >= 83
-    BaseType "Harbinger Bow" "Terror Claw" "Gemini Claw" "Jewelled Foil" "Vaal Rapier" "Behemoth Mace" "Vaal Axe" "Piledriver" "Coronal Maul" "Exquisite Blade" "Lathi" "Tiger Hook"
-    SetBackgroundColor 51 9 20 # Dark Red
-    SetBorderColor 255 47 100 # Bright Red
-
-# Itemlevel 77+ for T1 Added Physical
-Show
-    ItemLevel <= 82
-    ItemLevel >= 77
-    BaseType "Harbinger Bow" "Terror Claw" "Gemini Claw" "Jewelled Foil" "Vaal Rapier" "Behemoth Mace" "Vaal Axe" "Piledriver" "Coronal Maul" "Exquisite Blade" "Lathi" "Tiger Hook"
-    SetBackgroundColor 6 29 51 # Dark Blue
-    SetBorderColor 30 144 255 # Bright Blue
-
-# Itemlevel 75+ for Regal
-Show
-    ItemLevel <= 76
-    ItemLevel >= 75
-    BaseType "Harbinger Bow" "Terror Claw" "Gemini Claw" "Jewelled Foil" "Vaal Rapier" "Behemoth Mace" "Vaal Axe" "Piledriver" "Coronal Maul" "Exquisite Blade" "Lathi" "Tiger Hook"
-    SetBorderColor 30 144 255 # Bright Blue
-
-# Itemlevel 65+ for T2 Added Elemental
-Show
-    ItemLevel <= 74
-    ItemLevel >= 65
-    BaseType "Harbinger Bow" "Terror Claw" "Gemini Claw" "Jewelled Foil" "Vaal Rapier" "Behemoth Mace" "Vaal Axe" "Piledriver" "Coronal Maul" "Exquisite Blade" "Lathi" "Tiger Hook"
-
-# Itemlevel 84+ for T1 Spell Damage
-Show
-    ItemLevel >= 84
-    BaseType "Profane Wand" "Judgement Staff"
-    SetBackgroundColor 51 9 20 # Dark Red
-    SetBorderColor 255 47 100 # Bright Red
-
-# Itemlevel 76+ for T1 Spell Crit
-Show
-    ItemLevel <= 83
-    ItemLevel >= 78
-    BaseType "Profane Wand"
-    SetBackgroundColor 6 29 51 # Dark Blue
-    SetBorderColor 30 144 255 # Bright Blue
-
-# Itemlevel 76+ for T1 Spell Crit
-Show
-    ItemLevel <= 77
-    ItemLevel >= 75
-    BaseType "Profane Wand"
-    SetBorderColor 30 144 255 # Bright Blue
-
-# Itemlevel 64+ for T2 Spell Damage
-Show
-    ItemLevel <= 74
-    ItemLevel >= 64
-    BaseType "Profane Wand"
-
-# Itemlevel 84+ for T1 Spell Damage
-Show
-    ItemLevel >= 84
-    BaseType "Platinum Kris" "Ambusher" "Imbued Wand"
-    SetBackgroundColor 51 9 20 # Dark Red
-    SetBorderColor 255 47 100 # Bright Red
-
-# Itemlevel 77+ for T1 Added Physical
-Show
-    ItemLevel <= 83
-    ItemLevel >= 77
-    BaseType "Platinum Kris" "Ambusher" "Imbued Wand"
-    SetBackgroundColor 6 29 51 # Dark Blue
-    SetBorderColor 30 144 255 # Bright Blue
-
-Show
-    ItemLevel <= 76
-    ItemLevel >= 75
-    BaseType "Platinum Kris" "Ambusher" "Imbued Wand"
-    SetBorderColor 30 144 255 # Bright Blue
 
 # 65+ for T2 Added Physical
 Show
-    ItemLevel <= 76
     ItemLevel >= 65
+    Rarity = Normal Magic
+    BaseType "Harbinger Bow" "Terror Claw" "Gemini Claw" "Jewelled Foil" "Vaal Rapier" "Behemoth Mace" "Vaal Axe" "Piledriver" "Coronal Maul" "Exquisite Blade" "Lathi" "Tiger Hook"
+
+# Itemlevel 64+ for T2 Spell Damage
+Show
+    ItemLevel >= 64
+    Rarity = Normal Magic
+    BaseType "Profane Wand"
+
+# 65+ for T2 Added Physical
+Show
+    ItemLevel >= 65
+    Rarity = Normal Magic
     BaseType "Platinum Kris" "Ambusher" "Imbued Wand"
 
 # Section: Armour Crafting Bases
-
-# 84 to roll T1 "Armour/Evasion/ES%"
-Show
-    ItemLevel >= 84
-    BaseType "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Triumphant Lamellar" "Carnal Armour" "Sadist Garb" "Saintly Chainmail" "Saint's Hauberk" "Sacrificial Garb"
-    SetBackgroundColor 51 9 20 # Dark Red
-    SetBorderColor 255 47 100 # Bright Red
 
 # 78 to roll T1 "Evasion/Armour/ES% & Stun Recovery"
 Show
     ItemLevel <= 83
     ItemLevel >= 78
     BaseType "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Triumphant Lamellar" "Carnal Armour" "Sadist Garb" "Saintly Chainmail" "Saint's Hauberk" "Sacrificial Garb"
-    SetBackgroundColor 6 29 51 # Dark Blue
-    SetBorderColor 30 144 255 # Bright Blue
 
 # Section: Chance
 
@@ -285,8 +185,8 @@ Show
 
 Show
     Class "Utility Flasks"
-    SetBackgroundColor 17 51 13 # Dark Green
-    SetBorderColor 74 230 58 # Bright Green
+    # SetBackgroundColor 17 51 13 # Dark Green
+    # SetBorderColor 74 230 58 # Bright Green
 
 Show
     Quality >= 5
@@ -386,45 +286,45 @@ Show
 Show
     ItemLevel < 60
     LinkedSockets = 4
-    SetBackgroundColor 9 51 50 # Dark Blue
-    SetBorderColor 38 223 216 # Bright Blue
+    SetBackgroundColor 9 51 50 # Dark Teal
+    SetBorderColor 38 223 216 # Bright Teal
 
 # 3 Link Sceptres for the +1 Gem recipe
 Show
     ItemLevel < 40
     LinkedSockets = 3
     BaseType "Sceptre"
-    SetBackgroundColor 9 51 50 # Dark Blue
-    SetBorderColor 38 223 216 # Bright Blue
+    SetBackgroundColor 9 51 50 # Dark Teal
+    SetBorderColor 38 223 216 # Bright Teal
 
 # 3 Link Armours
 Show
     ItemLevel < 30
     LinkedSockets = 3
     Class "Body Armours" "Boot" "Glove" "Helmet"
-    SetBackgroundColor 9 51 50 # Dark Blue
-    SetBorderColor 38 223 216 # Bright Blue
+    SetBackgroundColor 9 51 50 # Dark Teal
+    SetBorderColor 38 223 216 # Bright Teal
 
 # Resist Rings / Iron Ring for use with gem recipe (Gem + Iron Ring = Resist ring)
 Show
     ItemLevel < 40
     BaseType "Iron Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Two-Stone Ring"
-    SetBackgroundColor 9 51 50 # Dark Blue
-    SetBorderColor 38 223 216 # Bright Blue
+    SetBackgroundColor 9 51 50 # Dark Teal
+    SetBorderColor 38 223 216 # Bright Teal
 
 # Stat amulets
 Show
     ItemLevel < 40
     BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet"
-    SetBackgroundColor 9 51 50 # Dark Blue
-    SetBorderColor 38 223 216 # Bright Blue
+    SetBackgroundColor 9 51 50 # Dark Teal
+    SetBorderColor 38 223 216 # Bright Teal
 
 # Heavy belts
 Show
     ItemLevel < 40
     BaseType "Heavy Belt"
-    SetBackgroundColor 9 51 50 # Dark Blue
-    SetBorderColor 38 223 216 # Bright Blue
+    SetBackgroundColor 9 51 50 # Dark Teal
+    SetBorderColor 38 223 216 # Bright Teal
 
 # Show all items until cruel.
 Show
@@ -437,14 +337,14 @@ Show
     ItemLevel <= 82
     ItemLevel >= 75
     Rarity = Rare
-    SetBorderColor 30 144 255
+    SetBorderColor 30 144 255 # Bright Blue
 
 # ilvl 60-74 rares (Chaos Recipe)
 Show
     ItemLevel <= 74
     ItemLevel >= 60
     Rarity = Rare
-    SetBorderColor 255 255 119
+    SetBorderColor 255 255 119 # Bright Yellow
 
 # Show all rares
 Show
