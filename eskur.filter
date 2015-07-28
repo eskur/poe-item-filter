@@ -111,16 +111,10 @@ Show
     SetBackgroundColor 17 51 13 # Dark Green
     SetBorderColor 74 230 58 # Bright Green
 
-# IPD / Spell Damage Recipes
-Show
-    ItemLevel <= 60
-    BaseType "Rustic Sash" "Chain Belt"
-    SetBackgroundColor 17 51 13 # Dark Green
-    SetBorderColor 74 230 58 # Bright Green
-
+# IPD Recipe
 Show
     ItemLevel >= 60
-    BaseType "Rustic Sash" "Chain Belt"
+    BaseType "Rustic Sash"
 
 # Section: Jewelry
 
@@ -156,6 +150,13 @@ Show
     SetBorderColor 74 230 58 # Bright Green
 
 # Section: Gems
+
+Show
+    Class "Gem"
+    BaseType "Empower" "Enhance" "Enlighten"
+    SetTextColor 0 0 0 # Black
+    SetBackgroundColor 27 162 155 # Gem Teal
+    SetBorderColor 0 0 0 # Black
 
 Show
     Quality > 0
@@ -199,21 +200,26 @@ Show
 
 Show
     Rarity = Normal
-    BaseType "Prophecy Wand" "Judgement Staff" "Gavel" "Occultist's Vestment"
+    BaseType "Prophecy Wand" "Judgement Staff" "Gavel" "Occultist's Vestment" "Desert Brigandine" "Champion Kite Shield"
     SetBackgroundColor 51 28 11 # Dark Brown
     SetBorderColor 175 96 37 # Bright Brown
 
-# Section: Flask
+# Section: Flasks
 
-Show
-    Class "Utility Flasks"
-
+# Quality Flasks
 Show
     Quality >= 5
     BaseType "Flask"
     SetBackgroundColor 17 51 13 # Dark Green
     SetBorderColor 74 230 58 # Bright Green
 
+# Utility Flasks
+Show
+    # Later on we highlight util flasks while leveling
+    ItemLevel >= 60
+    Class "Utility Flasks"
+
+# Hide Outdated Flasks
 # Medium
 Hide
     ItemLevel >= 6
@@ -268,14 +274,14 @@ Hide
     ItemLevel >= 50
     DropLevel <= 42
     Rarity = Normal Magic
-    Class "Mana Flasks" "Hybrid Flasks"
+    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
 
 # Sanctified
 Hide
     ItemLevel >= 60
     DropLevel <= 50
     Rarity = Normal Magic
-    Class "Mana Flasks" "Hybrid Flasks"
+    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks"
 
 # Divine
 Hide
@@ -290,15 +296,28 @@ Hide
     Rarity = Normal Magic
     Class "Mana Flasks" "Hybrid Flasks"
 
-# In maps show Hallowed/Divine/Eternal life flasks, but not sanctified.
-Hide
-    ItemLevel >= 68
-    Rarity = Normal Magic
-    Class "Life Flasks"
-    BaseType "Sanctified Life Flask"
-
+# Show Flasks
 Show
-    BaseType "Flask"
+    BaseType "Life Flask" "Mana Flask" "Hybrid Flask"
+
+# Section: Everything Else
+
+# Itemlevel 75+ rares (Regal Recipe)
+Show
+    ItemLevel >= 75
+    Rarity = Rare
+    SetBorderColor 30 144 255 # Bright Blue
+
+# Itemlevel 60-74 rares (Chaos Recipe)
+Show
+    ItemLevel <= 74
+    ItemLevel >= 60
+    Rarity = Rare
+    SetBorderColor 255 255 119 # Bright Yellow
+
+# Show all rares
+Show
+    Rarity = Rare
 
 # Section: Leveling
 
@@ -325,6 +344,14 @@ Show
     SetBackgroundColor 9 51 50 # Dark Teal
     SetBorderColor 38 223 216 # Bright Teal
 
+# Magic Boots (may have movespeed)
+Show
+    ItemLevel < 30
+    Class "Boot"
+    Rarity = Magic
+    SetBackgroundColor 9 51 50 # Dark Teal
+    SetBorderColor 38 223 216 # Bright Teal
+
 # Resist Rings / Iron Ring for use with gem recipe (Gem + Iron Ring = Resist ring)
 Show
     ItemLevel < 40
@@ -339,6 +366,13 @@ Show
     SetBackgroundColor 9 51 50 # Dark Teal
     SetBorderColor 38 223 216 # Bright Teal
 
+# Utility Flasks
+Show
+    ItemLevel < 60
+    Class "Utility Flasks"
+    SetBackgroundColor 9 51 50 # Dark Teal
+    SetBorderColor 38 223 216 # Bright Teal
+
 # Heavy belts
 Show
     ItemLevel < 40
@@ -346,28 +380,21 @@ Show
     SetBackgroundColor 9 51 50 # Dark Teal
     SetBorderColor 38 223 216 # Bright Teal
 
+# IPD Recipe
+Show
+    ItemLevel <= 60
+    BaseType "Rustic Sash"
+    Rarity = Normal Magic
+    SetBackgroundColor 17 51 13 # Dark Green
+    SetBorderColor 74 230 58 # Bright Green
+
 # Show all items until cruel.
 Show
+    SetBackgroundColor 0 0 0 127 # Semi Transparent
+    SetBorderColor 0 0 0 0 # Transparent
     ItemLevel < 40
 
-# Section: Everything Else
-
-# Itemlevel 75+ rares (Regal Recipe)
-Show
-    ItemLevel >= 75
-    Rarity = Rare
-    SetBorderColor 30 144 255 # Bright Blue
-
-# Itemlevel 60-74 rares (Chaos Recipe)
-Show
-    ItemLevel <= 74
-    ItemLevel >= 60
-    Rarity = Rare
-    SetBorderColor 255 255 119 # Bright Yellow
-
-# Show all rares
-Show
-    Rarity = Rare
+# Section: Misc
 
 # Hide the rest
 Hide
