@@ -44,6 +44,13 @@ Show
 
 # Section: Currency
 
+# Hide Fragments (Transmogrifying Tempest)
+Hide
+    BaseType "Scroll Fragment"
+    SetTextColor 242 213 145 # Bright Gold
+    SetBackgroundColor 0 0 0 # Black
+    SetFontSize 37
+
 # Rare
 Show
     BaseType "Divine Orb" "Eternal Orb" "Exalted Orb"
