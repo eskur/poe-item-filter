@@ -26,6 +26,11 @@ Show
     LinkedSockets = 6
     BaseType "Simple Robe"
 
+# Exception for normal Sacrificial Garb
+Show
+    Rarity = Normal
+    BaseType "Sacrificial Garb"
+
 Show
     LinkedSockets = 6
     SetTextColor 0 0 0 # Black
@@ -179,25 +184,28 @@ Show
 
 # Section: Crafting Bases
 
-# 65+ for T2 Added Physical
+# ilvl 65+ for T2 Added Physical
 Show
     ItemLevel >= 65
     Rarity = Normal Magic
+    Class "Claw" "Dagger" "Wand" "One Hand Sword" "One Hand Axe" "One Hand Mace" "Bow" "Staves" "Two Hand Sword" "Two Hand Axe" "Two Hand Mace" "Sceptre"
     BaseType "Harbinger Bow" "Terror Claw" "Gemini Claw" "Jewelled Foil" "Vaal Rapier" "Behemoth Mace" "Vaal Axe" "Piledriver" "Coronal Maul" "Exquisite Blade" "Lathi" "Tiger Hook"
 
-# Itemlevel 64+ for T2 Spell Damage
+# ilvl 64+ for T2 Spell Damage
 Show
     ItemLevel >= 64
     Rarity = Normal Magic
+    Class "Claw" "Dagger" "Wand" "One Hand Sword" "One Hand Axe" "One Hand Mace" "Bow" "Staves" "Two Hand Sword" "Two Hand Axe" "Two Hand Mace" "Sceptre"
     BaseType "Profane Wand"
 
-# 65+ for T2 Added Physical
+# ilvl 65+ for T2 Added Physical
 Show
     ItemLevel >= 65
     Rarity = Normal Magic
-    BaseType "Platinum Kris" "Ambusher" "Imbued Wand"
+    Class "Claw" "Dagger" "Wand" "One Hand Sword" "One Hand Axe" "One Hand Mace" "Bow" "Staves" "Two Hand Sword" "Two Hand Axe" "Two Hand Mace" "Sceptre"
+    BaseType "Platinum Kris" "Ambusher" "Imbued Wand" "Sai"
 
-# 78 to roll T1 "Evasion/Armour/ES% & Stun Recovery"
+# ilvl 78 to roll T1 "Evasion/Armour/ES% & Stun Recovery"
 Show
     ItemLevel >= 78
     Rarity = Normal Magic
@@ -222,7 +230,7 @@ Show
 
 # Utility Flasks
 Show
-    # Later on we highlight util flasks while leveling
+    # Later on we highlight low ilvl utility flasks while leveling
     ItemLevel >= 60
     Class "Utility Flasks"
 
