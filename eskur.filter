@@ -126,7 +126,15 @@ Show
 # IPD Recipe
 Show
     ItemLevel >= 60
+    ItemLevel <= 74
+    Rarity = Normal Magic
     BaseType "Rustic Sash"
+
+Show
+    ItemLevel >= 75
+    Rarity = Normal Magic
+    BaseType "Rustic Sash"
+    SetBorderColor 30 144 255 # Bright Blue
 
 # Section: Jewelry
 
