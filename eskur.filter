@@ -82,6 +82,10 @@ Show
 
 # Section: Divination Cards
 
+Hide
+    BaseType "The Carrion Crow"
+    Class "Divination Card"
+
 Show
     Class "Divination Card"
     SetTextColor 242 213 145 # Bright Gold
