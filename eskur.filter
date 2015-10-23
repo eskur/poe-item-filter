@@ -116,9 +116,19 @@ Show
 
 # Chromatic Recipe
 Show
+    ItemLevel <= 67
     SocketGroup "RGB"
     SetBackgroundColor 17 51 13 # Dark Green
     SetBorderColor 74 230 58 # Bright Green
+
+Show
+    ItemLevel >= 68
+    SocketGroup "RGB"
+    SetBackgroundColor 17 51 13 # Dark Green
+    SetBorderColor 74 230 58 # Bright Green
+    # 2x2 1x3 1x4 2x3
+    Width <= 2
+    Height <= 3
 
 # Chisel Recipe
 Show
