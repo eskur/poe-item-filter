@@ -87,6 +87,10 @@ Hide
     BaseType "The Carrion Crow"
     Class "Divination Card"
 
+Hide
+    BaseType "The King's Blade"
+    Class "Divination Card"
+
 Show
     Class "Divination Card"
     SetTextColor 242 213 145 # Bright Gold
