@@ -216,8 +216,71 @@ Show
     SetTextColor 27 162 155 # Gem Teal
     SetBackgroundColor 0 0 0 # Black
 
+#-------------------------------------------------------------------------------
+
 # Section: Crafting Bases
 
+#-------------------------------------------------------------------------------
+
+# Attack bases
+# ilvl 83+ for Merciless (T0 Phys)
+Show
+    ItemLevel >= 83
+    Rarity = Normal Magic
+    Class "Claw" "Dagger" "Wand" "One Hand Sword" "One Hand Axe" "One Hand Mace" "Bow" "Staves" "Two Hand Sword" "Two Hand Axe" "Two Hand Mace" "Sceptre"
+    BaseType "Harbinger Bow" "Terror Claw" "Gemini Claw" "Jewelled Foil" "Vaal Rapier" "Behemoth Mace" "Vaal Axe" "Piledriver" "Coronal Maul" "Exquisite Blade" "Lathi" "Tiger Hook"
+    SetBorderColor 255 0 60 # Bright Red
+
+# Spell bases
+# ilvl 84+ for Runic (T0 Spell Damage)
+Show
+    ItemLevel >= 84
+    Rarity = Normal Magic
+    Class "Claw" "Dagger" "Wand" "One Hand Sword" "One Hand Axe" "One Hand Mace" "Bow" "Staves" "Two Hand Sword" "Two Hand Axe" "Two Hand Mace" "Sceptre"
+    BaseType "Profane Wand"
+    SetBorderColor 255 0 60 # Bright Red
+
+# Hybrid Attack/Spell bases
+# ilvl 83+ for Merciless (T0 Phys)
+Show
+    ItemLevel >= 83
+    Rarity = Normal Magic
+    Class "Claw" "Dagger" "Wand" "One Hand Sword" "One Hand Axe" "One Hand Mace" "Bow" "Staves" "Two Hand Sword" "Two Hand Axe" "Two Hand Mace" "Sceptre"
+    BaseType "Platinum Kris" "Ambusher" "Imbued Wand" "Sai"
+    SetBorderColor 255 0 60 # Bright Red
+
+#-------------------------------------------------------------------------------
+
+# Attack bases
+# ilvl 77+ for Flaring (T1 Added Phys)
+Show
+    ItemLevel >= 77
+    Rarity = Normal Magic
+    Class "Claw" "Dagger" "Wand" "One Hand Sword" "One Hand Axe" "One Hand Mace" "Bow" "Staves" "Two Hand Sword" "Two Hand Axe" "Two Hand Mace" "Sceptre"
+    BaseType "Harbinger Bow" "Terror Claw" "Gemini Claw" "Jewelled Foil" "Vaal Rapier" "Behemoth Mace" "Vaal Axe" "Piledriver" "Coronal Maul" "Exquisite Blade" "Lathi" "Tiger Hook"
+    SetBorderColor 30 144 255 # Bright Blue
+
+# Spell bases
+# ilvl 80+ for Lich's (T0 Hybrid Spell Damage)
+Show
+    ItemLevel >= 80
+    Rarity = Normal Magic
+    Class "Claw" "Dagger" "Wand" "One Hand Sword" "One Hand Axe" "One Hand Mace" "Bow" "Staves" "Two Hand Sword" "Two Hand Axe" "Two Hand Mace" "Sceptre"
+    BaseType "Profane Wand"
+    SetBorderColor 30 144 255 # Bright Blue
+
+# Hybrid Attack/Spell bases
+# ilvl 77+ for Flaring (T1 Added Phys)
+Show
+    ItemLevel >= 77
+    Rarity = Normal Magic
+    Class "Claw" "Dagger" "Wand" "One Hand Sword" "One Hand Axe" "One Hand Mace" "Bow" "Staves" "Two Hand Sword" "Two Hand Axe" "Two Hand Mace" "Sceptre"
+    BaseType "Platinum Kris" "Ambusher" "Imbued Wand" "Sai"
+    SetBorderColor 30 144 255 # Bright Blue
+
+#-------------------------------------------------------------------------------
+
+# Attack bases
 # ilvl 65+ for T2 Added Physical
 Show
     ItemLevel >= 65
@@ -225,6 +288,7 @@ Show
     Class "Claw" "Dagger" "Wand" "One Hand Sword" "One Hand Axe" "One Hand Mace" "Bow" "Staves" "Two Hand Sword" "Two Hand Axe" "Two Hand Mace" "Sceptre"
     BaseType "Harbinger Bow" "Terror Claw" "Gemini Claw" "Jewelled Foil" "Vaal Rapier" "Behemoth Mace" "Vaal Axe" "Piledriver" "Coronal Maul" "Exquisite Blade" "Lathi" "Tiger Hook"
 
+# Spell bases
 # ilvl 64+ for T2 Spell Damage
 Show
     ItemLevel >= 64
@@ -232,6 +296,7 @@ Show
     Class "Claw" "Dagger" "Wand" "One Hand Sword" "One Hand Axe" "One Hand Mace" "Bow" "Staves" "Two Hand Sword" "Two Hand Axe" "Two Hand Mace" "Sceptre"
     BaseType "Profane Wand"
 
+# Hybrid Attack/Spell bases
 # ilvl 65+ for T2 Added Physical
 Show
     ItemLevel >= 65
@@ -239,11 +304,15 @@ Show
     Class "Claw" "Dagger" "Wand" "One Hand Sword" "One Hand Axe" "One Hand Mace" "Bow" "Staves" "Two Hand Sword" "Two Hand Axe" "Two Hand Mace" "Sceptre"
     BaseType "Platinum Kris" "Ambusher" "Imbued Wand" "Sai"
 
+#-------------------------------------------------------------------------------
+
+# Armors
 # ilvl 78 to roll T1 "Evasion/Armour/ES% & Stun Recovery"
 Show
     ItemLevel >= 78
     Rarity = Normal Magic
     BaseType "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Triumphant Lamellar" "Carnal Armour" "Sadist Garb" "Saintly Chainmail" "Saint's Hauberk" "Sacrificial Garb"
+    SetBorderColor 30 144 255 # Bright Blue
 
 # Section: Chance
 
