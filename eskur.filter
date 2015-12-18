@@ -92,6 +92,14 @@ Show
     SetTextColor 242 213 145 # Bright Gold
     SetBackgroundColor 0 0 0 # Black
     SetFontSize 37
+    PlayAlertSound 6 100
+
+# Section: Talismans
+
+Show
+    BaseType "Talisman"
+    SetBackgroundColor 17 51 13 # Dark Green
+    SetBorderColor 74 230 58 # Bright Green
 
 # Section: Maps
 
