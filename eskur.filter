@@ -1,24 +1,16 @@
-# ------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # Eskur's Item Filter
-# ------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
+# ------------------------------------------------------------------------------
 # Section: Basics
+# ------------------------------------------------------------------------------
 
 Show
     Class "Hideout Doodads" "Microtransactions" "Quest Items"
 
 Show
     Rarity = Unique
-
-# Section: Ultra Rare
-
-Show
-    Class "Fishing Rod"
-    SetTextColor 0 0 0 # Black
-    SetBackgroundColor 255 0 60 # Bright Red
-    SetBorderColor 0 0 0 # Black
-    SetFontSize 45
-    PlayAlertSound 1 100
 
 # Exception for Tabula Rasa
 Show
@@ -30,6 +22,22 @@ Show
 Show
     Rarity = Normal
     BaseType "Sacrificial Garb"
+
+# 5 Links
+Show
+    LinkedSockets = 5
+    SetBackgroundColor 17 51 13 # Dark Green
+    SetBorderColor 74 230 58 # Bright Green
+    PlayAlertSound 6 100
+
+# Ultra Rare
+Show
+    Class "Fishing Rod"
+    SetTextColor 0 0 0 # Black
+    SetBackgroundColor 255 0 60 # Bright Red
+    SetBorderColor 0 0 0 # Black
+    SetFontSize 45
+    PlayAlertSound 1 100
 
 Show
     LinkedSockets = 6
@@ -47,7 +55,9 @@ Show
     SetFontSize 45
     PlayAlertSound 1 100
 
+# ------------------------------------------------------------------------------
 # Section: Currency
+# ------------------------------------------------------------------------------
 
 # Hide Fragments (Transmogrifying Tempest)
 Hide
@@ -81,14 +91,12 @@ Show
     SetBackgroundColor 0 0 0 # Black
     SetFontSize 37
 
+# ------------------------------------------------------------------------------
 # Section: Divination Cards
+# ------------------------------------------------------------------------------
 
 Hide
-    BaseType "The Carrion Crow"
-    Class "Divination Card"
-
-Hide
-    BaseType "The King's Blade"
+    BaseType "The Carrion Crow" "The King's Blade"
     Class "Divination Card"
 
 Show
@@ -98,30 +106,86 @@ Show
     SetFontSize 37
     PlayAlertSound 6 100
 
+# ------------------------------------------------------------------------------
 # Section: Talismans
+# ------------------------------------------------------------------------------
 
 Show
     BaseType "Talisman"
     SetBackgroundColor 17 51 13 # Dark Green
     SetBorderColor 74 230 58 # Bright Green
 
+# ------------------------------------------------------------------------------
 # Section: Maps
+# ------------------------------------------------------------------------------
+
+# High tier
+# Maps:82 "Abyss" "Colosseum" "Core"
+# Maps:81 "Shrine" "Conservatory" "Palace"
+# Maps:80 "Courtyard" "Excavation" "Wasteland" "Waterways"
+# Maps:79 "Arsenal" "Overgrown Ruin" "Shipyard" "Village Ruin"
+# Maps:78 "Academy" "Crematorium" "Precinct" "Springs"
+
+# Mid tier
+# Maps:77 "Bazaar" "Necropolis" "Plateau" "Volcano"
+# Maps:76 "Arid Lake" "Gorge" "Residence" "Underground River" "Malformation"
+# Maps:75 "Canyon" "Cells" "Dark Forest" "Dry Peninsula" "Orchard"
+# Maps:74 "Jungle Valley" "Terrace" "Mine" "Torture Chamber" "Waste Pool"
+# Maps:73 "Arachnid" "Catacomb" "Colonnade" "Dry Woods" "Strand" "Temple"
+
+# Low tier
+# Maps:72 "Bog Map" "Coves" "Graveyard" "Pier" "Underground Sea" "Villa Map"
+# Maps:71 "Arena" "Overgrown Shrine" "Promenade" "Shore" "Spider Forest" "Tunnel" "Phantasmagoria"
+# Maps:70 "Ghetto" "Mud Geyser" "Museum" "Quarry" "Reef" "Spider Lair" "Vaal Pyramid"
+# Maps:69 "Arcade" "Cemetery" "Channel" "Mountain Ledge" "Sewer" "Thicket" "Wharf"
+# Maps:68 "Crypt" "Desert" "Dunes" "Dungeon" "Grotto" "Pit Map" "Tropical Island"
+
+# Unique
+Show
+    Class "Maps"
+    Rarity Unique
+    SetFontSize 45
+    PlayAlertSound 1 100
+
+# High tier maps (78-82)
+Show
+    Class "Maps"
+    BaseType "Abyss" "Colosseum" "Core" "Shrine" "Conservatory" "Palace" "Courtyard" "Excavation" "Wasteland" "Waterways" "Arsenal" "Overgrown Ruin" "Shipyard" "Village Ruin" "Academy" "Crematorium" "Precinct" "Springs"
+    SetTextColor 0 0 0 # Black
+    SetBackgroundColor 255 0 60 # Bright Red
+    SetBorderColor 0 0 0 # Black
+    SetFontSize 45
+    PlayAlertSound 1 100
+
+# Mid tier maps (73-77)
+Show
+    Class "Maps"
+    BaseType "Bazaar" "Necropolis" "Plateau" "Volcano" "Arid Lake" "Gorge" "Residence" "Underground River" "Malformation" "Canyon" "Cells" "Dark Forest" "Dry Peninsula" "Orchard" "Jungle Valley" "Terrace" "Mine" "Torture Chamber" "Waste Pool" "Arachnid" "Catacomb" "Colonnade" "Dry Woods" "Strand" "Temple"
+    SetTextColor 0 0 0 # Black
+    SetBackgroundColor 242 213 145 # Bright Gold
+    SetBorderColor 0 0 0 # Black
+    SetFontSize 45
+    PlayAlertSound 5 100
+
+# Low tier maps (68-72)
+Show
+    Class "Maps"
+    BaseType "Bog" "Coves" "Graveyard" "Pier" "Underground Sea" "Villa Map" "Arena" "Overgrown Shrine" "Promenade" "Shore" "Spider Forest" "Tunnel" "Phantasmagoria" "Ghetto" "Mud Geyser" "Museum" "Quarry" "Reef" "Spider Lair" "Vaal Pyramid" "Arcade" "Cemetery" "Channel" "Mountain Ledge" "Sewer" "Thicket" "Wharf" "Crypt" "Desert" "Dunes" "Dungeon" "Grotto" "Pit Map" "Tropical Island"
+    SetTextColor 242 213 145 # Bright Gold
+    SetBackgroundColor 0 0 0 # Black
+    SetBorderColor 242 213 145 # Bright Gold
+    SetFontSize 45
+    PlayAlertSound 6 100
 
 Show
     Class "Maps" "Map Fragments"
     SetBackgroundColor 51 23 50 # Dark Pink
     SetBorderColor 242 111 236 # Bright Pink
-    SetFontSize 37
-    PlayAlertSound 6 100
+    SetFontSize 45
 
+# ------------------------------------------------------------------------------
 # Section: Recipes
-
-# 5 Links
-Show
-    LinkedSockets = 5
-    SetBackgroundColor 17 51 13 # Dark Green
-    SetBorderColor 74 230 58 # Bright Green
-    PlayAlertSound 6 100
+# ------------------------------------------------------------------------------
 
 # Jeweler Recipe
 Show
@@ -131,20 +195,30 @@ Show
     PlayAlertSound 6 100
 
 # Chromatic Recipe
+# Only show small RGB items in maps
 Show
-    ItemLevel <= 67
+    ItemLevel >= 68
     SocketGroup "RGB"
     SetBackgroundColor 17 51 13 # Dark Green
     SetBorderColor 74 230 58 # Bright Green
+    # 2x2
+    Width <= 2
+    Height <= 2
 
 Show
     ItemLevel >= 68
     SocketGroup "RGB"
     SetBackgroundColor 17 51 13 # Dark Green
     SetBorderColor 74 230 58 # Bright Green
-    # 2x2 1x3 1x4 2x3
-    Width <= 2
-    Height <= 3
+    # 1x3 1x4
+    Width <= 1
+    Height <= 4
+
+Show
+    ItemLevel <= 60
+    SocketGroup "RGB"
+    SetBackgroundColor 17 51 13 # Dark Green
+    SetBorderColor 74 230 58 # Bright Green
 
 # Chisel Recipe
 Show
@@ -155,51 +229,70 @@ Show
 
 # IPD Recipe
 Show
-    ItemLevel >= 60
-    ItemLevel <= 74
-    Rarity = Normal Magic
-    BaseType "Rustic Sash"
-
-Show
     ItemLevel >= 75
     Rarity = Normal Magic
     BaseType "Rustic Sash"
     SetBorderColor 30 144 255 # Bright Blue
 
-# Section: Jewelry
-
 Show
-    ItemLevel >= 75
-    Rarity = Normal Magic
-    BaseType "Diamond Ring" "Gold Ring" "Iron Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Two-Stone Ring" "Unset Ring"
-    SetBorderColor 30 144 255 # Bright Blue
-
-Show
-    ItemLevel >= 75
-    Rarity = Normal Magic
-    BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Gold Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet"
-    SetBorderColor 30 144 255 # Bright Blue
-
-Show
-    ItemLevel <= 74
     ItemLevel >= 60
     Rarity = Normal Magic
-    BaseType "Diamond Ring" "Gold Ring" "Iron Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Two-Stone Ring" "Unset Ring"
+    BaseType "Rustic Sash"
 
+# Highlight while leveling
 Show
-    ItemLevel <= 74
-    ItemLevel >= 60
+    ItemLevel < 60
+    BaseType "Rustic Sash"
     Rarity = Normal Magic
-    BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Gold Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet"
-
-# Section: Jewels
-
-Show
-    Class "Jewel"
     SetBackgroundColor 17 51 13 # Dark Green
     SetBorderColor 74 230 58 # Bright Green
 
+# ------------------------------------------------------------------------------
+# Section: Jewelry
+# ------------------------------------------------------------------------------
+
+Show
+    ItemLevel >= 75
+    Rarity = Normal Magic
+    BaseType "Diamond Ring" "Gold Ring" "Iron Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Two-Stone Ring" "Unset Ring"
+    SetBorderColor 30 144 255 # Bright Blue
+
+Show
+    ItemLevel >= 75
+    Rarity = Normal Magic
+    BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Gold Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet"
+    SetBorderColor 30 144 255 # Bright Blue
+
+Show
+    ItemLevel >= 60
+    Rarity = Normal Magic
+    BaseType "Diamond Ring" "Gold Ring" "Iron Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Two-Stone Ring" "Unset Ring"
+
+Show
+    ItemLevel >= 60
+    Rarity = Normal Magic
+    BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Gold Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet"
+
+# ------------------------------------------------------------------------------
+# Section: Jewels
+# ------------------------------------------------------------------------------
+
+Show
+    Class "Jewel"
+    Rarity = Rare
+    SetBackgroundColor 17 51 13 # Dark Green
+    SetBorderColor 74 230 58 # Bright Green
+    PlayAlertSound 6 100
+
+Show
+    Class "Jewel"
+    Rarity = Normal Magic
+    SetBackgroundColor 17 51 13 # Dark Green
+    SetBorderColor 74 230 58 # Bright Green
+
+# ------------------------------------------------------------------------------
 # Section: Gems
+# ------------------------------------------------------------------------------
 
 Show
     Class "Gem"
@@ -207,6 +300,15 @@ Show
     SetTextColor 0 0 0 # Black
     SetBackgroundColor 27 162 155 # Gem Teal
     SetBorderColor 0 0 0 # Black
+    PlayAlertSound 6 100
+
+Show
+    Quality > 10
+    Class "Gem"
+    SetTextColor 27 162 155 # Gem Teal
+    SetBackgroundColor 0 0 0 # Black
+    SetBorderColor 27 162 155 # Gem Teal
+    PlayAlertSound 6 100
 
 Show
     Quality > 0
@@ -220,11 +322,9 @@ Show
     SetTextColor 27 162 155 # Gem Teal
     SetBackgroundColor 0 0 0 # Black
 
-#-------------------------------------------------------------------------------
-
+# ------------------------------------------------------------------------------
 # Section: Crafting Bases
-
-#-------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 # Attack bases
 # ilvl 83+ for Merciless (T0 Phys)
@@ -253,8 +353,6 @@ Show
     BaseType "Platinum Kris" "Ambusher" "Imbued Wand" "Sai"
     SetBorderColor 255 0 60 # Bright Red
 
-#-------------------------------------------------------------------------------
-
 # Attack bases
 # ilvl 77+ for Flaring (T1 Added Phys)
 Show
@@ -282,8 +380,6 @@ Show
     BaseType "Platinum Kris" "Ambusher" "Imbued Wand" "Sai"
     SetBorderColor 30 144 255 # Bright Blue
 
-#-------------------------------------------------------------------------------
-
 # Attack bases
 # ilvl 65+ for T2 Added Physical
 Show
@@ -308,8 +404,6 @@ Show
     Class "Claw" "Dagger" "Wand" "One Hand Sword" "One Hand Axe" "One Hand Mace" "Bow" "Staves" "Two Hand Sword" "Two Hand Axe" "Two Hand Mace" "Sceptre"
     BaseType "Platinum Kris" "Ambusher" "Imbued Wand" "Sai"
 
-#-------------------------------------------------------------------------------
-
 # Armors
 # ilvl 78 to roll T1 "Evasion/Armour/ES% & Stun Recovery"
 Show
@@ -318,7 +412,9 @@ Show
     BaseType "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Triumphant Lamellar" "Carnal Armour" "Sadist Garb" "Saintly Chainmail" "Saint's Hauberk" "Sacrificial Garb"
     SetBorderColor 30 144 255 # Bright Blue
 
+# ------------------------------------------------------------------------------
 # Section: Chance
+# ------------------------------------------------------------------------------
 
 Show
     Rarity = Normal
@@ -326,7 +422,9 @@ Show
     SetBackgroundColor 51 28 11 # Dark Brown
     SetBorderColor 175 96 37 # Bright Brown
 
+# ------------------------------------------------------------------------------
 # Section: Flasks
+# ------------------------------------------------------------------------------
 
 # Quality Flasks
 Show
@@ -422,26 +520,9 @@ Hide
 Show
     BaseType "Life Flask" "Mana Flask" "Hybrid Flask"
 
-# Section: Everything Else
-
-# Itemlevel 75+ rares (Regal Recipe)
-Show
-    ItemLevel >= 75
-    Rarity = Rare
-    SetBorderColor 30 144 255 # Bright Blue
-
-# Itemlevel 60-74 rares (Chaos Recipe)
-Show
-    ItemLevel <= 74
-    ItemLevel >= 60
-    Rarity = Rare
-    SetBorderColor 255 255 119 # Bright Yellow
-
-# Show all rares
-Show
-    Rarity = Rare
-
+# ------------------------------------------------------------------------------
 # Section: Leveling
+# ------------------------------------------------------------------------------
 
 # 4 links
 Show
@@ -502,21 +583,35 @@ Show
     SetBackgroundColor 9 51 50 # Dark Teal
     SetBorderColor 38 223 216 # Bright Teal
 
-# IPD Recipe
-Show
-    ItemLevel <= 60
-    BaseType "Rustic Sash"
-    Rarity = Normal Magic
-    SetBackgroundColor 17 51 13 # Dark Green
-    SetBorderColor 74 230 58 # Bright Green
-
 # Show all items until cruel.
 Show
     SetBackgroundColor 0 0 0 127 # Semi Transparent
     SetBorderColor 0 0 0 0 # Transparent
     ItemLevel < 40
 
+# ------------------------------------------------------------------------------
+# Section: Everything Else
+# ------------------------------------------------------------------------------
+
+# Itemlevel 75+ rares (Regal Recipe)
+Show
+    ItemLevel >= 75
+    Rarity = Rare
+    SetBorderColor 30 144 255 # Bright Blue
+
+# Itemlevel 60-74 rares (Chaos Recipe)
+Show
+    ItemLevel >= 60
+    Rarity = Rare
+    SetBorderColor 255 255 119 # Bright Yellow
+
+# Show all rares
+Show
+    Rarity = Rare
+
+# ------------------------------------------------------------------------------
 # Section: Misc
+# ------------------------------------------------------------------------------
 
 # Hide the rest
 Hide
