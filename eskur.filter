@@ -83,7 +83,7 @@ Show
 
 # Uncommon
 Show
-    BaseType "Blessed Orb" "Cartographer's Chisel" "Chaos Orb" "Gemcutter's Prism" "Glassblower's Bauble" "Orb of Alchemy" "Orb of Fusing" "Orb of Regret" "Orb of Scouring" "Regal Orb" "Vaal Orb"
+    BaseType "Blessed Orb" "Chaos Orb" "Gemcutter's Prism" "Orb of Alchemy" "Orb of Fusing" "Orb of Regret" "Orb of Scouring" "Regal Orb" "Vaal Orb"
     SetTextColor 242 213 145 # Bright Gold
     SetBackgroundColor 0 0 0 # Black
     SetBorderColor 242 213 145 # Bright Gold
