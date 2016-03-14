@@ -425,7 +425,7 @@ Show
 
 Show
     Rarity = Normal
-    BaseType "Prophecy Wand" "Judgement Staff" "Gavel" "Occultist's Vestment" "Desert Brigandine" "Champion Kite Shield" "Sorcerer Boots"
+    BaseType "Sorcerer Boots"
     SetBackgroundColor 51 28 11 # Dark Brown
     SetBorderColor 175 96 37 # Bright Brown
 
