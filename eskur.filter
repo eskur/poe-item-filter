@@ -8,6 +8,12 @@
 
 Show
     Class "Hideout Doodads" "Microtransactions" "Quest Items"
+    SetFontSize 45
+
+Show
+    BaseType "Treasure Key" "Golden Key" "Silver Key"
+    SetTextColor 74 230 58
+    SetFontSize 45
 
 Show
     Rarity = Unique
