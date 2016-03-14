@@ -153,15 +153,16 @@ Show
     SetFontSize 45
     PlayAlertSound 1 100
 
-# High tier maps (78-82)
+# Low tier first so "Overgrown Shrine" does not get mistaken for "Shrine"
+# Low tier maps (68-72)
 Show
     Class "Maps"
-    BaseType "Abyss" "Colosseum" "Core" "Shrine" "Conservatory" "Palace" "Courtyard" "Excavation" "Wasteland" "Waterways" "Arsenal" "Overgrown Ruin" "Shipyard" "Village Ruin" "Academy" "Crematorium" "Precinct" "Springs"
-    SetTextColor 0 0 0 # Black
-    SetBackgroundColor 255 0 60 # Bright Red
-    SetBorderColor 0 0 0 # Black
+    BaseType "Bog" "Coves" "Graveyard" "Pier" "Underground Sea" "Villa Map" "Arena" "Overgrown Shrine" "Promenade" "Shore" "Spider Forest" "Tunnel" "Phantasmagoria" "Ghetto" "Mud Geyser" "Museum" "Quarry" "Reef" "Spider Lair" "Vaal Pyramid" "Arcade" "Cemetery" "Channel" "Mountain Ledge" "Sewer" "Thicket" "Wharf" "Crypt" "Desert" "Dunes" "Dungeon" "Grotto" "Pit Map" "Tropical Island"
+    SetTextColor 242 213 145 # Bright Gold
+    SetBackgroundColor 0 0 0 # Black
+    SetBorderColor 242 213 145 # Bright Gold
     SetFontSize 45
-    PlayAlertSound 1 100
+    PlayAlertSound 6 100
 
 # Mid tier maps (73-77)
 Show
@@ -173,15 +174,15 @@ Show
     SetFontSize 45
     PlayAlertSound 5 100
 
-# Low tier maps (68-72)
+# High tier maps (78-82)
 Show
     Class "Maps"
-    BaseType "Bog" "Coves" "Graveyard" "Pier" "Underground Sea" "Villa Map" "Arena" "Overgrown Shrine" "Promenade" "Shore" "Spider Forest" "Tunnel" "Phantasmagoria" "Ghetto" "Mud Geyser" "Museum" "Quarry" "Reef" "Spider Lair" "Vaal Pyramid" "Arcade" "Cemetery" "Channel" "Mountain Ledge" "Sewer" "Thicket" "Wharf" "Crypt" "Desert" "Dunes" "Dungeon" "Grotto" "Pit Map" "Tropical Island"
-    SetTextColor 242 213 145 # Bright Gold
-    SetBackgroundColor 0 0 0 # Black
-    SetBorderColor 242 213 145 # Bright Gold
+    BaseType "Abyss" "Colosseum" "Core" "Shrine" "Conservatory" "Palace" "Courtyard" "Excavation" "Wasteland" "Waterways" "Arsenal" "Overgrown Ruin" "Shipyard" "Village Ruin" "Academy" "Crematorium" "Precinct" "Springs"
+    SetTextColor 0 0 0 # Black
+    SetBackgroundColor 255 0 60 # Bright Red
+    SetBorderColor 0 0 0 # Black
     SetFontSize 45
-    PlayAlertSound 6 100
+    PlayAlertSound 1 100
 
 Show
     Class "Maps" "Map Fragments"
