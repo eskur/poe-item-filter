@@ -310,7 +310,7 @@ Show
     PlayAlertSound 6 100
 
 Show
-    Quality > 10
+    Quality >= 10
     Class "Gem"
     SetTextColor 27 162 155 # Gem Teal
     SetBackgroundColor 0 0 0 # Black
